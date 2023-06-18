@@ -55,6 +55,10 @@ cd /home/ubuntu/spark
 ## Clone git repository
 ```
 git clone vietnamese-news-crawler-word-counter
+```
+### Run Spark query streaming
+Applications will use query streaming to listen kafka message from ```bao_tuoi_tre_topic``` topic and send the processed output to ```bao_tuoi_tre_word_counter``` topic.
+```
 ./bin/spark-submit --master spark://master:7000 --deploy-mode client --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.4.0 --conf spark.app.name=word_counter vietnamese-news-crawler-word-counter/word_counter.py
 ```
 
