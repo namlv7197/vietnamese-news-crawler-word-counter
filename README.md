@@ -39,7 +39,7 @@ Modify ```conf/spark-env.sh``` by inserting these following lines
 ```
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export SPARK_HOME=/home/ubuntu/spark
-export SPARK_MASTER_HOST=10.10.3.14
+export SPARK_MASTER_HOST=52.221.251.208
 export SPARK_MASTER_PORT=7000
 export SPARK_MASTER_WEBUI_PORT=8000
 export SPARK_CONF_DIR=${SPARK_HOME}/conf
@@ -60,7 +60,7 @@ spark.dynamicAllocation.maxExecutors=1
 ## Start Spark Workernode
 Master WebUI [Master](http://52.221.251.208:8000/)
 ```
-./sbin/start-worker.sh spark://10.10.3.14:7000
+./sbin/start-worker.sh spark://52.221.251.208:7000
 ```
 
 ## Clone git repository and install ```requirements```
@@ -72,7 +72,7 @@ pip install -r vietnamese-news-crawler-word-counter/requirements.txt
 ### Run Spark query streaming
 Applications will use query streaming to listen kafka message from ```bao_tuoi_tre_topic``` topic and send the processed output to ```bao_tuoi_tre_word_counter``` topic.
 ```
-./bin/spark-submit --master spark://10.10.3.14:7000 --deploy-mode client --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.4.0 --conf spark.app.name=word_counter vietnamese-news-crawler-word-counter/word_counter.py
+./bin/spark-submit --master spark://52.221.251.208:7000 --deploy-mode client --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.4.0 --conf spark.app.name=word_counter vietnamese-news-crawler-word-counter/word_counter.py
 ```
 
 ## Check message sent to Kafka topic
