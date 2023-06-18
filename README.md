@@ -60,7 +60,7 @@ Master WebUI [Master](http://52.77.232.150:8000/)
 
 ## Clone git repository
 ```
-git clone vietnamese-news-crawler-word-counter
+git clone https://github.com/namlv7197/vietnamese-news-crawler-word-counter.git
 ```
 ### Run Spark query streaming
 Applications will use query streaming to listen kafka message from ```bao_tuoi_tre_topic``` topic and send the processed output to ```bao_tuoi_tre_word_counter``` topic.
