@@ -90,7 +90,7 @@ if __name__=='__main__':
     .format('kafka') \
     .trigger(processingTime='2 seconds') \
     .outputMode('update') \
-    .option("checkpointLocation","file:///home/lvnam7197/Documents/kafka/ckpt_dir") \
+    .option("checkpointLocation","file:///tmp/ckpt_dir") \
     .option("kafka.bootstrap.servers", "54.179.7.184:9092,54.151.183.113:9092,54.254.228.131:9092") \
     .option("topic", "bao_tuoi_tre_word_counter") \
     .start() \
