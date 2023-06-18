@@ -26,7 +26,7 @@ Remove template suffix in ```conf/```
 mv conf/spark-env.sh.template conf/spark-env.sh
 mv conf/spark-defaults.conf.template conf/spark-defaults.conf
 ```
-Modify conf/spark-env.sh by inserting these following lines
+Modify ```conf/spark-env.sh``` by inserting these following lines
 ```
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export SPARK_HOME=/home/ubuntu/spark
@@ -36,7 +36,7 @@ export SPARK_MASTER_WEBUI_PORT=8000
 export SPARK_CONF_DIR=${SPARK_HOME}/conf
 ```
 
-Modify conf/spark-defaults.conf by inserting these following lines
+Modify ```conf/spark-defaults.conf``` by inserting these following lines
 ```
 spark.executor.cores=1
 spark.executor.memory=512m
