@@ -56,13 +56,9 @@ spark.sql.streaming.stateStore.stateSchemaCheck=false
 spark.sql.mapKeyDedupPolicy=LAST_WIN
 spark.dynamicAllocation.maxExecutors=1
 ```
-## Start Spark master
-```
-cd /home/ubuntu/spark
-./sbin/start-master.sh
-```
-Master WebUI [Master](http://52.77.232.150:8000/)
+
 ## Start Spark Workernode
+Master WebUI [Master](http://52.77.232.150:8000/)
 ```
 ./sbin/start-worker.sh spark://10.10.10.13:7000
 ```
