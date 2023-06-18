@@ -67,7 +67,7 @@ Master WebUI [Master](http://52.77.232.150:8000/)
 ./sbin/start-worker.sh spark://10.10.10.13:7000
 ```
 
-## Clone git repository
+## Clone git repository and install ```requirements```
 ```
 git clone https://github.com/namlv7197/vietnamese-news-crawler-word-counter.git
 ```
