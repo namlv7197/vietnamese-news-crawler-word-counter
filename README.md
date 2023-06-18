@@ -39,6 +39,25 @@ spark.dynamicAllocation.initialExecutors=1
 spark.sql.streaming.statefulOperator.checkCorrectness.enabled=false
 spark.sql.streaming.stateStore.stateSchemaCheck=false
 spark.sql.mapKeyDedupPolicy=LAST_WIN
+spark.dynamicAllocation.maxExecutors=1
+```
+## Start Spark master
+```
+cd /home/ubuntu/spark
+./sbin/start-master.sh
+```
+
+## Start Spark Workernode
+```
+./sbin/start-worker.sh spark://192.168.0.11:7000
+```
+
+## Clone git repository
+```
+git clone vietnamese-news-crawler-word-counter
+./bin/spark-submit --master spark://master:7000 --deploy-mode client --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.4.0 --conf spark.app.name=word_counter vietnamese-news-crawler-word-counter/word_counter.py
+
+
 ```
 
 
