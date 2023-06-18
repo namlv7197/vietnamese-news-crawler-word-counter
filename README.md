@@ -70,6 +70,7 @@ Master WebUI [Master](http://52.77.232.150:8000/)
 ## Clone git repository and install ```requirements```
 ```
 git clone https://github.com/namlv7197/vietnamese-news-crawler-word-counter.git
+pip install -r vietnamese-news-crawler-word-counter/requirements.txt
 ```
 
 ### Run Spark query streaming
