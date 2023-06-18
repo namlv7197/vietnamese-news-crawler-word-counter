@@ -55,7 +55,7 @@ cd /home/ubuntu/spark
 Master WebUI [Master](http://52.77.232.150:8000/)
 ## Start Spark Workernode
 ```
-./sbin/start-worker.sh spark://192.168.0.11:7000
+./sbin/start-worker.sh spark://10.10.10.13:7000
 ```
 
 ## Clone git repository
