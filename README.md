@@ -1,6 +1,6 @@
 # vietnamese-news-crawler-word-counter
 
-Word counter in the news content by Spark Standalone
+Word counter in the news content by Spark Standalone on AWS
 
 Author: Le Viet Nam
 
