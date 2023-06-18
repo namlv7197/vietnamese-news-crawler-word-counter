@@ -29,7 +29,6 @@ mv spark-3.4.0-bin-hadoop3 spark
 cd spark/
 ```
 ## Configure Spark
-AWS Private IP: 10.10.10.13
 Remove template suffix in ```conf/```
 ```
 mv conf/spark-env.sh.template conf/spark-env.sh
