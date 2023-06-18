@@ -39,7 +39,7 @@ Modify ```conf/spark-env.sh``` by inserting these following lines
 ```
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export SPARK_HOME=/home/ubuntu/spark
-export SPARK_MASTER_HOST=10.10.10.13
+export SPARK_MASTER_HOST=10.10.3.14
 export SPARK_MASTER_PORT=7000
 export SPARK_MASTER_WEBUI_PORT=8000
 export SPARK_CONF_DIR=${SPARK_HOME}/conf
@@ -58,9 +58,9 @@ spark.dynamicAllocation.maxExecutors=1
 ```
 
 ## Start Spark Workernode
-Master WebUI [Master](http://52.77.232.150:8000/)
+Master WebUI [Master](http://52.221.251.208:8000/)
 ```
-./sbin/start-worker.sh spark://10.10.10.13:7000
+./sbin/start-worker.sh spark://10.10.3.14:7000
 ```
 
 ## Clone git repository and install ```requirements```
