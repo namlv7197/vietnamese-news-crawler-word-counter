@@ -62,6 +62,16 @@ Master WebUI [Master](http://52.77.232.150:8000/)
 ```
 git clone https://github.com/namlv7197/vietnamese-news-crawler-word-counter.git
 ```
+## Install python virtual environment
+```
+sudo apt update && apt install -y python3-venv
+```
+## Create python virtual environment
+```
+mkdir python3_venvs
+python3 -m venv python3_venvs/vietnamese-news-crawler-word-counter
+source /home/ubuntu/python3_venvs/vietnamese-news-crawler-word-counter/bin/activate
+```
 ### Run Spark query streaming
 Applications will use query streaming to listen kafka message from ```bao_tuoi_tre_topic``` topic and send the processed output to ```bao_tuoi_tre_word_counter``` topic.
 ```
