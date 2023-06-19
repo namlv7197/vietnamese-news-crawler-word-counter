@@ -75,6 +75,7 @@ Applications will use query streaming to listen kafka message from ```bao_tuoi_t
 ```
 
 ## Check message sent to Kafka topic
+Copy the following content and run
 ```
 from confluent_kafka import Consumer
 import json
