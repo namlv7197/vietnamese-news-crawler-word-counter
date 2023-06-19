@@ -71,7 +71,12 @@ pip install -r vietnamese-news-crawler-word-counter/requirements.txt
 ### Run Spark query streaming
 Applications will use query streaming to listen kafka message from ```bao_tuoi_tre_topic``` topic and send the processed output to ```bao_tuoi_tre_word_counter``` topic.
 ```
-./bin/spark-submit --master spark://52.221.251.208:7000 --deploy-mode client --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.4.0 --conf spark.app.name=word_counter vietnamese-news-crawler-word-counter/word_counter.py
+./bin/spark-submit \
+ --master spark://52.221.251.208:7000 \
+ --deploy-mode client \
+ --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.4.0 \
+ --conf spark.app.name=word_counter \
+ vietnamese-news-crawler-word-counter/word_counter.py
 ```
 
 ## Check message sent to Kafka topic
