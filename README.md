@@ -1,6 +1,6 @@
 # vietnamese-news-crawler-word-counter
 
-Word counter in the news content by Spark Standalone.
+Count word frequency of news content by Spark Standalone.
 
 Author: Le Viet Nam
 
