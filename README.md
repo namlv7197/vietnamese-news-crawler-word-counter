@@ -101,4 +101,9 @@ while True:
 
 c.close()
 ```
+Or
+```
+source /home/ubuntu/python3_venvs/vietnamese-news-crawler-word-counter/bin/activate
+python3 vietnamese-news-crawler-word-counter/listen_message.py
+```
 
