@@ -59,7 +59,7 @@ if __name__=='__main__':
     df = spark \
     .readStream \
     .format("kafka") \
-    .option("kafka.bootstrap.servers", "54.179.7.184:9092,54.151.183.113:9092,54.254.228.131:9092") \
+    .option("kafka.bootstrap.servers", "54.255.215.10:9092,13.212.251.13:9092,13.212.207.232:9092") \
     .option("subscribe", "bao_tuoi_tre_topic") \
     .option("startingOffsets","latest") \
     .option("startingOffsetsByTimestampStrategy",'latest') \
@@ -91,7 +91,7 @@ if __name__=='__main__':
     .trigger(processingTime='2 seconds') \
     .outputMode('update') \
     .option("checkpointLocation","file:///tmp/ckpt_dir") \
-    .option("kafka.bootstrap.servers", "54.179.7.184:9092,54.151.183.113:9092,54.254.228.131:9092") \
+    .option("kafka.bootstrap.servers", "54.255.215.10:9092,13.212.251.13:9092,13.212.207.232:9092") \
     .option("topic", "bao_tuoi_tre_word_counter") \
     .start() \
     .awaitTermination()
