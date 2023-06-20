@@ -44,7 +44,7 @@ export SPARK_MASTER_WEBUI_PORT=8000
 export SPARK_CONF_DIR=${SPARK_HOME}/conf
 ```
 
-Modify ```conf/spark-defaults.conf``` by inserting these following lines (for client)
+Modify ```conf/spark-defaults.conf``` by inserting these following lines (for worker/client)
 ```
 spark.executor.cores=1
 spark.executor.memory=512m
